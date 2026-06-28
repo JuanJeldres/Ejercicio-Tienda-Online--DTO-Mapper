@@ -21,7 +21,7 @@ public class ProductoController {
         return  service.crearProducto(request);
     }
 
-    @GetMapping("/{id}")
+    @GetMapping
     public List<ProductoResponseDTO> obtenerProductos(){
         return service.obtenerProductos();
     }

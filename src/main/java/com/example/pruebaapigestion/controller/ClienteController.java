@@ -4,7 +4,7 @@ import com.example.pruebaapigestion.dto.ClienteRequestDTO;
 import com.example.pruebaapigestion.dto.ClienteResponseDTO;
 import com.example.pruebaapigestion.service.ClienteService;
 import lombok.AllArgsConstructor;
-import org.springframework.stereotype.Controller;
+
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;

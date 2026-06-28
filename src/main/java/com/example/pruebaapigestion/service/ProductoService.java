@@ -1,7 +1,5 @@
 package com.example.pruebaapigestion.service;
 
-import com.example.pruebaapigestion.dto.ClienteRequestDTO;
-import com.example.pruebaapigestion.dto.ClienteResponseDTO;
 import com.example.pruebaapigestion.dto.ProductoRequestDTO;
 import com.example.pruebaapigestion.dto.ProductoResponseDTO;
 

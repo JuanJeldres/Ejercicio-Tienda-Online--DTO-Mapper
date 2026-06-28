@@ -1,7 +1,6 @@
 package com.example.pruebaapigestion.service;
 
 import com.example.pruebaapigestion.Model.ModelProducto;
-import com.example.pruebaapigestion.Model.ModelUsuario;
 import com.example.pruebaapigestion.Repository.ProductoRepository;
 import com.example.pruebaapigestion.dto.ProductoRequestDTO;
 import com.example.pruebaapigestion.dto.ProductoResponseDTO;
@@ -46,7 +45,7 @@ private final ProductoMapper mapper;
         producto.setDescripcion(dto.descripcion());
         producto.setPrecio(dto.precio());
         producto.setStock(dto.stock());
-        producto.setCategoria(dto.categoria()););
+        producto.setCategoria(dto.categoria());
         ModelProducto actualizado = repository.save(producto);
         return mapper.toDto(actualizado);
     }

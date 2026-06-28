@@ -1,14 +1,12 @@
 package com.example.pruebaapigestion.mapper;
 
 import com.example.pruebaapigestion.Model.ModelProducto;
-import com.example.pruebaapigestion.Model.ModelUsuario;
-import com.example.pruebaapigestion.dto.ClienteRequestDTO;
-import com.example.pruebaapigestion.dto.ClienteResponseDTO;
 import com.example.pruebaapigestion.dto.ProductoRequestDTO;
+import com.example.pruebaapigestion.dto.ProductoResponseDTO;
 import lombok.Builder;
 import org.springframework.stereotype.Component;
 
-@Builder
+//@Builder
 @Component
 public class ProductoMapper {
     public ModelProducto toModel (ProductoRequestDTO request){
@@ -21,11 +19,11 @@ public class ProductoMapper {
         return producto;
     }
 
-    public ClienteResponseDTO toDto (ModelUsuario cliente){
-        return ClienteResponseDTO.builder()
-                .id(cliente.getId())
-                .nombre(cliente.getNombre())
-                .correo(cliente.getCorreo())
+    public ProductoResponseDTO toDto (ModelProducto producto){
+        return ProductoResponseDTO.builder()
+                .id(producto.getId())
+                .nombreProducto(producto.getNombreProducto())
+                .stock(producto.getStock())
                 .build();
     }
 }
