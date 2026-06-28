@@ -31,8 +31,7 @@ public class ClienteController {
     }
 
     @PutMapping("/{id}")
-    public ClienteResponseDTO
-    actualizarCliente(@PathVariable Long id, @RequestBody ClienteRequestDTO request){
+    public ClienteResponseDTO actualizarCliente(@PathVariable Long id, @RequestBody ClienteRequestDTO request){
         return service.actualizarCliente(id,request);
     }
 
